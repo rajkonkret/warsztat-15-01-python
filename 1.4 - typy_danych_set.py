@@ -35,3 +35,4 @@ print(zbior)  # dodane wartosci dwoch zbiorow {66, 999, 11, 44, 77, 45, 18, 54, 
 print(zbior2)
 lista = list(zbior)
 print(lista)  # [66, 999, 11, 44, 77, 45, 18, 54, 55, 62, 31]
+# 13:30
