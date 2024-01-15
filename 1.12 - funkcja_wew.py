@@ -12,3 +12,4 @@ xFun = fun1()  # To jest fun1
 print(xFun)  # <function fun1.<locals>.fun2 at 0x00000175D0508C20>
 print(type(xFun))  # <class 'function'>
 xFun()  # To jest fun2
+# 15:05
