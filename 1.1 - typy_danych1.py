@@ -34,3 +34,4 @@ print(sys.float_info)
 #                min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
 temp2 = 36, 6  # to nie jest liczba!!! krotka(tupla)
 # typ zmiennoprzecinkowy rozdzielane kropką
+# 11:30
