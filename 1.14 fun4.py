@@ -1,5 +1,7 @@
 # lambda - skrocony zapis funkcji
 # mozliwosc uzycia funkcji w miejscu deklaracji
+from functools import reduce, lru_cache
+
 
 def liczymy(x, y):
     return x * y
@@ -58,3 +60,34 @@ print(r0)
 print(r1)
 # {'miasto': 'Kielce', 'ZIP': '00-000'}
 # {'miasto': 'Kielce', 'ZIP': '25-900'}
+
+lata = [(2000, 29.7), (2001, 33.12), (2010, 32.92)]
+print(max(lata))  # (2010, 32.92)
+print(min(lata))  # (2000, 29.7)
+print(max(lata, key=lambda c: c[1]))  # (2001, 33.12)
+print(max(map(lambda c: (c[1], c), lata)))  # (33.12, (2001, 33.12))
+print(max(map(lambda c: (c[1], c[0]), lata)))  # (33.12, 2001)
+
+
+def iloczyn(a, b):
+    return a * b
+
+
+# reduce()
+liczby = [1, 2, 3, 4, 5]
+wynik = reduce(iloczyn, liczby)
+print(wynik)  # 120
+
+
+@lru_cache(maxsize=1000)
+def fib_cached(n):
+    if n < 2:
+        return n
+    return fib_cached(n - 1) + fib_cached(n - 2)
+
+
+print(fib_cached(10))
+print(fib_cached.cache_info())
+# CacheInfo(hits=8, misses=11, maxsize=1000, currsize=11)
+# hits - ile razy uzyskał wynikał nie muszac wykonywac obliczen
+# misses - tyle razy musial na nowo obliczyc
