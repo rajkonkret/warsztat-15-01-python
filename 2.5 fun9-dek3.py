@@ -27,6 +27,7 @@ def my_function():
     total = sum(range(15_000_000))
     print("Sum is:", total)
 
+
 @measure_time
 def my_function_np():
     total = np.sum(np.arange(15_000_000), dtype=np.int64)
