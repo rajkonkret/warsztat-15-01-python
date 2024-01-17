@@ -11,3 +11,4 @@ finally:
         sql_connection.close()
         print("Baza danch została zamknieta")
 
+# hackerrank
