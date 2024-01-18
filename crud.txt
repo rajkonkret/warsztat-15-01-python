@@ -1,0 +1,9 @@
+Aplikacje bazodanowe
+Skrótowiec CRUD oznacza podstawowe operacje implementowane w aplikacjach bazodanowych.
+Każdy człon tego skrótu może być realizowany przez standardowe instrukcje SQL, metody HTTP oraz operacje DDS[1]:
+
+Działanie	Instrukcja SQL	HTTP	DDS
+Create	INSERT	PUT / POST	write
+Read (Retrieve)	SELECT	GET	read / take
+Update	UPDATE	POST / PUT / PATCH	write
+Delete (Destroy)	DELETE	DELETE	dispose

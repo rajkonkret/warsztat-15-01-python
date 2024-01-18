@@ -1,0 +1,11 @@
+Lista metod HTTP
+
+1   GET	pobieranie danych
+2  	HEAD	pobieranie metadanych na temat zapytania
+3	POST	wysyłanie danych
+4	PUT	dodanie zasobu
+5	DELETE	skasowanie zasobu
+6	OPTIONS	sprawdzenie udostępnionych metod
+7	TRACE	używane przy testowaniu połączeń
+8	CONNECT                   	stworzenie tunelu poprzez serwery proxy
+9	PATCH	aktualizacja części danych
