@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Jenny",
+        "last": "Gonzales"
+      },
+      "location": {
+        "street": {
+          "number": 5814,
+          "name": "W Gray St"
+        },
+        "city": "Fairfield",
+        "state": "Maryland",
+        "country": "United States",
+        "postcode": 64664,
+        "coordinates": {
+          "latitude": "81.6067",
+          "longitude": "79.7803"
+        },
+        "timezone": {
+          "offset": "-2:00",
+          "description": "Mid-Atlantic"
+        }
+      },
+      "email": "jenny.gonzales@example.com",
+      "login": {
+        "uuid": "75569e46-9312-46b5-98e9-2a5eb8e99692",
+        "username": "organicdog669",
+        "password": "systems",
+        "salt": "mfiySwgH",
+        "md5": "26a9819835ae263e2c9c61a2ba18df19",
+        "sha1": "d8d7bc11c844890ca5b9ee9df72e4f18d10be55d",
+        "sha256": "2d72049782fa67456ae5725aa9a48c367829056ca3d3a29af97e688baada1f69"
+      },
+      "dob": {
+        "date": "1963-04-06T14:45:31.760Z",
+        "age": 60
+      },
+      "registered": {
+        "date": "2020-09-22T05:48:16.550Z",
+        "age": 3
+      },
+      "phone": "(695) 636-1023",
+      "cell": "(308) 259-9298",
+      "id": {
+        "name": "SSN",
+        "value": "878-48-4135"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/66.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/66.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/66.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "8fd0c8b9d5e398d8",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
