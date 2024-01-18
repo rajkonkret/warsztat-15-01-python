@@ -11,7 +11,7 @@ print(type("93"))  # <class 'str'>
 # print("93" + 45)  # TypeError: can only concatenate str (not "int") to str
 print("93" + "45")  # konkatenacja tekstów 9345 - łaczenie
 print(93 + 45)  # 138
-# silne typowanie - nie z amienia sam typów
+# silne typowanie - nie zamienia sam typów
 # musimy jawnie wskazac zamiane
 print(int("93") + 45)  # int() - rzutowanie, zamiana na int
 print(str("93") + "45")  # str() - rzutowanie na str 9345
