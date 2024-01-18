@@ -49,3 +49,23 @@ session.commit()
 # odczytac z bazy authorów i z autorów odczytac ich ksiazki
 # z ksiazki odczytac wydacw
 # wypisac auto, ksiazka, wydawca
+
+authors = session.query(Author).all()
+print(authors)
+
+for author in authors:
+    print(f"Author: {author.name}")
+    for b in author.books:
+        print(f"Ksiązka {b.title}, wydawca: {b.publisher.name}")
+# [<__main__.Author object at 0x00000269ADF1EDE0>]
+# Author: Adam Mickiewicz
+# Ksiązka Pan Tadeusz, wydawca: Wydawnictwo XYZ
+publishers = session.query(Publisher).all()
+for publisher in publishers:
+    print(f"Wydawca: {publisher.name}")
+    for book in publisher.books:
+        print(f"""Ksiązka: {book.title}
+Author: {book.author.name}""")
+# Wydawca: Wydawnictwo XYZ
+# Ksiązka: Pan Tadeusz
+# Author: Adam Mickiewicz
